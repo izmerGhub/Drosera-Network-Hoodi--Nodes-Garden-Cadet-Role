@@ -9,7 +9,7 @@
 
 #### **Update System**
 
-run ur wsl and update dependecies
+run your wsl and update dependecies
 ```bash
 sudo apt update && sudo apt upgrade -y
 ```
