@@ -78,16 +78,22 @@ To save: **Ctrl+X**, then **Y**, and **Enter**
 
 Edit `nano drosera.toml`:  
 ```toml
-ethereum_rpc = "https://ethereum-hoodi-rpc.publicnode.com"  
-drosera_rpc = "https://relay.hoodi.drosera.io"  
-eth_chain_id = 560048  
-drosera_address = "0x91cB447BaFc6e0EA0F4Fe056F5a9b1F14bb06e5D"  
+ethereum_rpc = "https://ethereum-hoodi-rpc.publicnode.com"
+drosera_rpc = "https://relay.hoodi.drosera.io"
+eth_chain_id = 560048
+drosera_address = "0x91cB447BaFc6e0EA0F4Fe056F5a9b1F14bb06e5D"
 
-[traps.mytrap]  
-path = "out/Trap.sol/Trap.json"  
+[traps]
+
+[traps.mytrap]
+path = "out/Trap.sol/Trap.json"
 response_contract = "0x25E2CeF36020A736CF8a4D2cAdD2EBE3940F4608"
-response_function = "respondWithDiscordName(string)"  
-private_trap = true  
+response_function = "respondWithDiscordName(string)"
+cooldown_period_blocks = 33
+min_number_of_operators = 1
+max_number_of_operators = 2
+block_sample_size = 10
+private_trap = true
 whitelist = ["YOUR_NODE_GARDEN_WALLET_ADDRESS"]
 address = "NODES_GARDEN_TRAP_ADDRESS" #Provided by Node Garden check dashboard
 ```  
