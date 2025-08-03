@@ -8,6 +8,8 @@
 2. Restart your PC.
 
 #### **Update System**
+
+run ur wsl and update dependecies
 ```bash
 sudo apt update && sudo apt upgrade -y
 ```
