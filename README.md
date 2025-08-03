@@ -1,5 +1,5 @@
 
-# **Node Garden - Drosera Trap Setup for Cadet Role**  
+# **Nodes Garden - Drosera Trap Setup for Cadet Role**  
 #### **Install WSL (Ubuntu)**
 1. Open **PowerShell as Admin** and run:
    ```powershell
@@ -89,7 +89,7 @@ response_contract = "0x25E2CeF36020A736CF8a4D2cAdD2EBE3940F4608"
 response_function = "respondWithDiscordName(string)"  
 private_trap = true  
 whitelist = ["YOUR_NODE_GARDEN_WALLET_ADDRESS"]
-address = "NODE_GARDEN_TRAP_ADDRESS" #Provided by Node Garden check dashboard
+address = "NODES_GARDEN_TRAP_ADDRESS" #Provided by Node Garden check dashboard
 ```  
 
 ### **4. Deploy (Using Node Garden’s Key)**  
@@ -98,14 +98,14 @@ forge build
 drosera dryrun  # Test first  
 ```
 ```sh
-DROSERA_PRIVATE_KEY="NODE_GARDEN_WALLET_PRIVATE_KEY" drosera apply  
+DROSERA_PRIVATE_KEY="NODES_GARDEN_WALLET_PRIVATE_KEY" drosera apply  
 ```
 
 ### **5. Verify Cadet Role**  
 ```sh
 cast call 0x25E2CeF36020A736CF8a4D2cAdD2EBE3940F4608 "isResponder(address)(bool)" YOUR_NODE_GARDEN_WALLET_ADDRESS --rpc-url https://ethereum-hoodi-rpc.publicnode.com  
 ```
-Replace `YOUR_NODE_GARDEN_WALLET_ADDRESS` with your Node Green Wallet Address
+Replace `YOUR_NODES_GARDEN_WALLET_ADDRESS` with your Nodes Green Wallet Address
 
 If `true`, your Discord role will update shortly.  
 
