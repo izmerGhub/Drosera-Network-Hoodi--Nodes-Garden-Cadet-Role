@@ -71,7 +71,10 @@ contract Trap is ITrap {
         return (true, abi.encode(name));
     }
 }
-```  
+```
+Replace `YOURDISCORD` with your Discord username.  
+To save: **Ctrl+X**, then **Y**, and **Enter**
+
 
 Edit `nano drosera.toml`:  
 ```toml
@@ -101,7 +104,9 @@ DROSERA_PRIVATE_KEY="NODE_GARDEN_WALLET_PRIVATE_KEY" drosera apply
 ### **5. Verify Cadet Role**  
 ```sh
 cast call 0x25E2CeF36020A736CF8a4D2cAdD2EBE3940F4608 "isResponder(address)(bool)" YOUR_NODE_GARDEN_WALLET_ADDRESS --rpc-url https://ethereum-hoodi-rpc.publicnode.com  
-```  
+```
+Replace `YOUR_NODE_GARDEN_WALLET_ADDRESS` with your Node Green Wallet Address
+
 If `true`, your Discord role will update shortly.  
 
 ---
