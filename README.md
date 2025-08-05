@@ -41,7 +41,7 @@ forge init -t drosera-network/trap-foundry-template
 bun install  
 ```  
 
-### **3. Configure Trap for Node Garden**  
+### **3. Configure Trap for Nodes Garden/Mintair**  
 Edit `nano src/Trap.sol` (keep original response contract!):  
 ```solidity
 it:
