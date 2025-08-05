@@ -1,5 +1,5 @@
 
-# **Nodes Garden - Drosera Trap Setup for Cadet Role**  
+# **Nodes Garden/Mintair - Drosera Trap Setup for Cadet Role**  
 
 ![Purple Text](https://img.shields.io/badge/This_method_also_works_for_Mintair_users-purple?style=for-the-badge&color=800080)
 
@@ -97,24 +97,24 @@ min_number_of_operators = 1
 max_number_of_operators = 2
 block_sample_size = 10
 private_trap = true
-whitelist = ["YOUR_NODE_GARDEN_WALLET_ADDRESS"]
-address = "NODES_GARDEN_TRAP_ADDRESS" #Provided by Nodes Garden check dashboard
+whitelist = ["YOUR_NODE_GARDEN/MINTAIR_WALLET_ADDRESS"]
+address = "NODES_GARDEN/MINTAIR_TRAP_ADDRESS" #Provided by Nodes Garden/Mintair check dashboard
 ```  
 
-### **4. Deploy (Using Nodes Garden’s Key)**  
+### **4. Deploy (Using Nodes Gardens/Mintair Key)**  
 ```sh
 forge build  
 drosera dryrun  # Test first  
 ```
 ```sh
-DROSERA_PRIVATE_KEY="NODES_GARDEN_WALLET_PRIVATE_KEY" drosera apply  
+DROSERA_PRIVATE_KEY="NODES_GARDEN/MINTAIR_WALLET_PRIVATE_KEY" drosera apply  
 ```
 
 ### **5. Verify Cadet Role**  
 ```sh
-cast call 0x25E2CeF36020A736CF8a4D2cAdD2EBE3940F4608 "isResponder(address)(bool)" YOUR_NODE_GARDEN_WALLET_ADDRESS --rpc-url https://ethereum-hoodi-rpc.publicnode.com  
+cast call 0x25E2CeF36020A736CF8a4D2cAdD2EBE3940F4608 "isResponder(address)(bool)" YOUR_NODE_GARDEN/MINTAIR_WALLET_ADDRESS --rpc-url https://ethereum-hoodi-rpc.publicnode.com  
 ```
-Replace `YOUR_NODES_GARDEN_WALLET_ADDRESS` with your Nodes Green Wallet Address
+Replace `YOUR_NODES_GARDEN/MINTAIR_WALLET_ADDRESS` with your Nodes Green/Mintair Wallet Address
 
 If `true`, your Discord role will update shortly.  
 
