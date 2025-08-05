@@ -1,7 +1,7 @@
 
 # **Nodes Garden - Drosera Trap Setup for Cadet Role**  
 
-<span style="color:purple">*This method also works for Mintair users*</span>
+![Purple Text](https://img.shields.io/badge/This_method_also_works_for_Mintair_users-purple?style=for-the-badge&color=800080)
 
 #### **Install WSL (Ubuntu)**
 1. Open **PowerShell as Admin** and run:
