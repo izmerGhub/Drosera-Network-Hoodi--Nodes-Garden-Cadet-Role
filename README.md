@@ -1,5 +1,8 @@
 
 # **Nodes Garden - Drosera Trap Setup for Cadet Role**  
+
+<span style="color:purple">*This method also works for Mintair users*</span>
+
 #### **Install WSL (Ubuntu)**
 1. Open **PowerShell as Admin** and run:
    ```powershell
@@ -95,10 +98,10 @@ max_number_of_operators = 2
 block_sample_size = 10
 private_trap = true
 whitelist = ["YOUR_NODE_GARDEN_WALLET_ADDRESS"]
-address = "NODES_GARDEN_TRAP_ADDRESS" #Provided by Node Garden check dashboard
+address = "NODES_GARDEN_TRAP_ADDRESS" #Provided by Nodes Garden check dashboard
 ```  
 
-### **4. Deploy (Using Node Garden’s Key)**  
+### **4. Deploy (Using Nodes Garden’s Key)**  
 ```sh
 forge build  
 drosera dryrun  # Test first  
